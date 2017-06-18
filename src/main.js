@@ -14,7 +14,7 @@ Vue.config.productionTip = false
 Vue.use(VueFire)
 Vue.use(Vuetify)
 
-unsubscribe = auth.onAuthStateChanged( (user) => {
+const unsubscribe = auth.onAuthStateChanged( (user) => {
   new Vue({
     el: '#app',
     router,
